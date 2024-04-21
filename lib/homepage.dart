@@ -36,7 +36,7 @@ SharedPreferencesHelper.setLanguage(key,"languages");
     setState(() {
       currentlanguage = newValue!;
     });
-    // changelanguage(newValue!);
+   changelanguage(newValue!);
   },
   items: languages
       .map<DropdownMenuItem<String>>((String value) {
