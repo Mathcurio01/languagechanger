@@ -16,7 +16,7 @@ class SharedPreferencesHelper {
 
   // To get a string value
   static String? getLanguage(String key) {
-    return _sharedPreferences!.getString(key);
+    return _sharedPreferences?.getString(key);
   }
 
   // Similarly, you can create methods for other data types.

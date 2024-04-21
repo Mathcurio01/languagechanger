@@ -13,11 +13,11 @@ class _HomePageState extends State<HomePage> {
   String currentlanguage="English";
   String key ="lang";
 
-  // @override
-  // void initState() {
-  //  currentlanguage=SharedPreferencesHelper.getLanguage(key)??"languages[0]";
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+   currentlanguage=SharedPreferencesHelper.getLanguage(key)??"English";
+    super.initState();
+  }
   void changelanguage(String lang)
   {
 SharedPreferencesHelper.setLanguage(key,"languages");
